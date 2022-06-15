@@ -44,15 +44,15 @@ const id = Math.floor(Math.random() * 10);
 const id2 = Math.floor(Math.random() * 100);
 
 const funTab = [
-    async () => axios.get(`https://jsonplaceholder.typicode.com/photos`),
-    async () => axios.post(`https://jsonplaceholder.typicode.com/posts`, {
+    () => axios.get(`https://jsonplaceholder.typicode.com/photos`),
+    () => axios.post(`https://jsonplaceholder.typicode.com/posts`, {
         title: 'Test',
         body: 'Lorem ipsum',
         userId: 2
     }),
-    async () => axios.get(`https://jsonplaceholder.typicode.com/users/${id}`),
-    async () => axios.get(`https://jsonplaceholder.typicode.com/todos`),
-    async () => axios.put(`https://jsonplaceholder.typicode.com/posts/${id2}`, {
+    () => axios.get(`https://jsonplaceholder.typicode.com/users/${id}`),
+    () => axios.get(`https://jsonplaceholder.typicode.com/todos`),
+    () => axios.put(`https://jsonplaceholder.typicode.com/posts/${id2}`, {
         id: id2,
         userId: 3,
         title: 'New title',

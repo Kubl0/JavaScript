@@ -37,34 +37,34 @@ const result = (funTab1, funTab2, process) => {
 
 
 const tab1 = [
-    async () => new Promise((resolve) => {
+    () => new Promise((resolve) => {
         resolve(1)
     }),
 
-    async () => new Promise((resolve) => {
+    () => new Promise((resolve) => {
         resolve(2)
     }),
 
-    async () => new Promise((resolve) => {
+    () => new Promise((resolve) => {
         resolve(3)
     })
 ]
 
 
 const tab2 = [
-    async () => new Promise((resolve) => {
+    () => new Promise((resolve) => {
         resolve(4)
     }),
 
-    async () => new Promise((resolve) => {
+    () => new Promise((resolve) => {
         resolve(5)
     }),
 
-    async () => new Promise((resolve) => {
+    () => new Promise((resolve) => {
         resolve(6)
     }),
 
-    async () => new Promise((resolve) => {
+    () => new Promise((resolve) => {
         resolve(7)
     })
 ]
