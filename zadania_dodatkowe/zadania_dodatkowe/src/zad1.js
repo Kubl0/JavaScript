@@ -9,12 +9,17 @@ const getNumber = (cb) => {
 };
 
 const asyncSort = (dim) => {
-    const unsortedArray = [...Array(dim).keys()].map(async (_) => {
-        return getNumber((n) => n + 1);
-    });
+    let arr =[]
     
-    return unsortedArray 
+    for(let i=0;i<dim;i++){
+        getNumber((result) => {
+            arr.push(result)
+            if(arr.length===dim){
+                console.log(arr.sort().reverse())
+            }
+        })
+    }
 };
 
-console.log(asyncSort(5))
+asyncSort(5)
 

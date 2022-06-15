@@ -34,3 +34,8 @@ StwĂłrz funkcjÄ, ktĂłra przyjmuje jako parametr obiekt takiej postaci:
 NastÄpnie wysyĹa taki obiekt za pomocÄ funkcji post z biblioteki axios pod url: https://jsonplaceholder.typicode.com/todos
 JeĹli dodanie zakoĹczy siÄ sukcesem - wyĹwietli w konsoli komunikat 'Dodano' i wyĹwietli id dodanego obiektu. W przeciwnym wypadku wypisze bĹÄd.
 */
+
+axios.post('https://jsonplaceholder.typicode.cm/todos', {idUser: 2, title: 'abc', completed: true})
+  .then(response => {
+    console.log('Dodano')
+  }).catch(err => console.log('Error'))
